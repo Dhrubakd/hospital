@@ -29,7 +29,8 @@ const Navbar = () => {
           display: 'flex', 
           alignItems: 'center', 
           gap: '0.75rem',
-          textDecoration: 'none'
+          textDecoration: 'none',
+          borderRadius: 'full',
         }}>
           <img 
             src={logo} 
@@ -37,7 +38,7 @@ const Navbar = () => {
             style={{
               width: '50px',
               height: '50px',
-              borderRadius: '12px',
+              borderRadius: '50%',
               objectFit: 'cover',
               boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
             }}
