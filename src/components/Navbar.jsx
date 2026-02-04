@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { FaHospital, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,20 +31,17 @@ const Navbar = () => {
           gap: '0.75rem',
           textDecoration: 'none'
         }}>
-          <div style={{
-            width: '45px',
-            height: '45px',
-            background: 'linear-gradient(135deg, #3b82f6, #2563eb)',
-            borderRadius: '12px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: 'white',
-            fontSize: '1.5rem',
-            boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
-          }}>
-            <FaHospital />
-          </div>
+          <img 
+            src={logo} 
+            alt="MediCare Hospital Logo" 
+            style={{
+              width: '50px',
+              height: '50px',
+              borderRadius: '12px',
+              objectFit: 'cover',
+              boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
+            }}
+          />
           <span style={{ 
             color: 'var(--dark)',
             fontWeight: '700',
