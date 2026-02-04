@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import { FaUserMd, FaHospital, FaCalendarCheck, FaAmbulance, FaHeartbeat, FaStethoscope } from "react-icons/fa";
+import image1 from '../../assets/image1.jpg';
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section - Full Height */}
-      <section className="hero">
+      <section className="hero" style={{
+        backgroundImage: `linear-gradient(rgba(37, 99, 235, 0.5), rgba(59, 130, 246, 0.5)), url(${image1})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container" style={{ height: '100%' }}>
           <div style={{ 
             display: 'flex', 
